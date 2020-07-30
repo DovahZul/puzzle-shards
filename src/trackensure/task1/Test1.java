@@ -14,8 +14,10 @@ public class Test1 {
 		int result = 0;		
 		int pool = val;
 		
-		for(int i = 1; i <= pool - i; i += 1) {
+		for(int i = 1; i <= pool; i += 1) {
+			System.out.println("Going row:" + i + " Avaialble pool: " + (pool - i));
 			result += 1;
+			pool -= i;
 		}
 		
 		return result;
