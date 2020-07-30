@@ -20,5 +20,7 @@ CREATE TABLE `Manager` (
 Getting all employees with higher salary that their manager has..
 */
 
-SELECT Name as Employee FROM Employee WHERE ManagerId IN 
+SELECT Employee.Name as Employee FROM Employee 
+INNER JOIN Manager ON ManagerId = Manager.Id 
+WHERE ManagerId IN 
 (SELECT Id from Manager WHERE Salary < Employee.Salary)
