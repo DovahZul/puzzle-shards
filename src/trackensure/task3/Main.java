@@ -17,8 +17,8 @@ public class Main {
 			String word1 = new String();
 			String word2 = new String();
 			//Scanner myInput = new Scanner( System.in );
-			word2 = "qwere";
 			word1 = "horse";
+			word2 = "ros";
 			
 			//System.out.println("");
 			
