@@ -4,7 +4,8 @@ CREATE TABLE `Employee` (
 	`Id`	INTEGER NOT NULL,
 	`Name`	TEXT,
 	`Salary`	INTEGER,
-	`ManagerId`	INTEGER
+	`ManagerId`	INTEGER,
+	FOREIGN KEY(`ManagerId`) REFERENCES `Manager`(`Id`)
 );
 
 CREATE TABLE `Manager` (
